@@ -5,7 +5,31 @@
 }
 
 <div class="text-center">
-    <h1 class="display-4">SoftWarrior'a Hoşgeldiniz..</h1>
+    <h1 class="display-4">Gerçekleştirmeyi Planladığımız CRUD operasyonları</h1>
 
-    <p>Learn about <a href="https://docs.microsoft.com/aspnet/core">building Web apps with ASP.NET Core</a>.</p>
+    <img src="media/diagram.png" alt="Database Diagram" />
+
+    <div style="float: left; text-align: left; margin-top: 20px;">
+        <h3>CREATE</h3>
+        <ul>
+            <li>Kullanıcının sistemi kayıt olması ile USERS tablosuna CREATE işlemi yapılmaktadır.</li>
+            <li>Yöneticinin rol eklemesi ile ROLES tablosuna CREATE işlemi yapılmaktadır.</li>
+            <li>Kullanıcının bir makale yayınlaması ile ARTICLES tablosuna CREATE işlemi yapılmaktadır.</li>
+            <li>Yöneticinin kategori oluşturması ile CATEGORIES tablosuna CREATE işlemi yapılmaktadır.</li>
+            <li>Kullanıcının etiket oluşturması ile TAGS ve ARTIGLE_TAGS tablolarına CREATE işlemi yapılmaktadır.</li>
+            <li>Kullanıcının makaleye yorum yapması ile COMMENTS ve ARTICLE_COMMENTS tablolarına CREATE işlemi yapılmaktadır.</li>
+        </ul>
+        <h3>UPDATE</h3>
+        <ul>
+            <li>Kullanıcının bilgilerinde bir değişiklik yapması ile USERS tablosunda UPDATE işlemi uygulanmaktadır.</li>
+            <li>Kullanıcının makalesinde bir düzenleme yapması ile ARTICLES tablosuna UPDATE işlemi yapılmaktadır.</li>
+        </ul>
+        <h3>DELETE</h3>
+        <ul>
+            <li>Kullanıcın makaledeki bir etiketi kaldırması ile ARTICLE_TAGS tablosuna DELETE işlemi uygulanmaktadır.</li>
+            <li>Yöneticinin kullanıcıdan bir rolü kaldırması ile USER_ROLES tablosuna DELETE işlemi uygulanmaktadır.</li>
+            <li>Kullanıcın yaptığı yorumu silmesi ile COMMENTS tablosuna DELETE işlemi uygulanmaktadır.</li>
+        </ul>
+    </div>
+
 </div>
